@@ -1,0 +1,198 @@
+@import "_vars";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+// Darkmode styling
+
+.darkMode {
+  background-color: $background;
+
+  button {
+    border: 1px solid $text-color-dark;
+  }
+
+  .collapse {
+    border-bottom: 1px solid $title-color;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $text-color-dark;
+    }
+    .nav-link:hover {
+      color: $hover-color;
+    }
+  }
+
+  .search {
+    input {
+      color: $text-color-dark !important;
+      background-color: $background;
+    }
+    input::placeholder {
+      color: $text-color-dark !important;
+    }
+  }
+
+  .switch {
+    background-color: $background !important;
+  }
+
+  .btn-toggle {
+    background-color: $text-color-dark !important;
+    transform: translateX(24px);
+  }
+
+  .firstPage {
+    .card {
+      background-color: $background !important;
+
+      .card-title {
+        color: $title-color !important;
+      }
+
+      .card-text {
+        color: $text-color-dark !important;
+      }
+      a {
+        color: $hover-color !important;
+        text-decoration: none !important;
+      }
+      a:hover {
+        color: $text-color-dark !important;
+      }
+    }
+  }
+}
+
+.navbar {
+  width: 90%;
+  margin: 1rem auto;
+  z-index: 999;
+
+  button {
+    border: 1px solid $text-color;
+  }
+
+  .collapse {
+    width: 100%;
+    border-bottom: 1px solid $blue-light-color;
+
+    .navbar-nav {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .search {
+      float: right;
+      width: 100%;
+      input {
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        color: $text-color;
+        margin: 0 auto;
+        text-align: end;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+
+        @media (max-width: 768px) {
+          width: 100%;
+          text-align: center;
+          margin: 10px auto;
+        }
+      }
+      input::placeholder {
+        color: $text-color;
+      }
+    }
+  }
+  .switch {
+    position: fixed;
+    top: 1rem;
+    right: 0.5rem;
+    display: flex;
+    border-radius: 50px;
+    width: 4rem;
+    padding: 0.3rem;
+    background-color: $text-color-dark;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: 1px solid $title-color;
+  }
+
+  .btn-toggle {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: $background;
+    transition: transform 0.1s;
+  }
+}
+
+.firstPage {
+  width: 90%;
+  height: 80vh;
+  margin-top: 5rem;
+
+  .firstPageMainrow {
+    width: 100%;
+    height: 100%;
+
+    .firstPageCols {
+      max-height: 1080px;
+    }
+  }
+
+  .card {
+    min-height: 450px;
+    max-height: 500px;
+    margin: 0.75rem;
+    height: 95%;
+    background-color: #f4f4f4;
+
+    .card-img-top {
+      max-height: 50%;
+    }
+    .card-body {
+      width: 100%;
+
+      .card-title {
+        color: $blue-dark-color;
+      }
+      .card-text {
+        width: 95%;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .main {
+    min-height: 630px;
+    max-height: 820px;
+    margin: 0.75rem;
+    background-color: #f4f4f4;
+
+    @media (max-width: 768px) {
+      min-height: 450px;
+      max-height: 500px;
+    }
+    .card-title {
+      color: $blue-dark-color;
+    }
+
+    .card-img-top {
+      max-height: 65%;
+
+      @media (max-width: 768px) {
+        max-height: 50%;
+      }
+    }
+  }
+}
