@@ -12,7 +12,7 @@
   background-color: $background;
 
   button {
-    border: 1px solid $text-color-dark;
+    background-color: $blue-dark-color;
   }
 
   .collapse {
@@ -68,6 +68,8 @@
     }
   }
 }
+
+// Light mode styling
 
 .navbar {
   width: 90%;
@@ -139,7 +141,16 @@
 .firstPage {
   width: 90%;
   height: 80vh;
-  margin-top: 5rem;
+  position: relative;
+
+  .backToTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 0.75rem;
+    display: inline-block;
+    z-index: 99;
+    opacity: 0.7;
+  }
 
   .firstPageMainrow {
     width: 100%;

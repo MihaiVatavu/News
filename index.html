@@ -6,18 +6,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link id="pageStyle" rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css">
   <title>News App</title>
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-light" id="navbar">
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav text-center">
         <li class="nav-item">
           <a href="#" class="nav-link" data-id="Home">Home</a>
         </li>
@@ -45,69 +46,72 @@
       <span class="btn-toggle"></span>
   </div>
 </nav>
-<main class="container-fluid firstPage">
-  <div class="row" id="firstPageMainRow">
+<main class="container-fluid firstPage" >
+ 
+    <a href="#firstNews" class="backToTop" ><i class="fas fa-angle-double-up fa-4x"></i></a>
+
+  <div class="row" >
     <div class="col-md-6 firstPageCols firstCol">
       <div class="row">
-        <div class="col-md-6 col-sm-12 " id="firstPageFirstNews">
+        <div class="col-md-6 col-sm-12" id="firstNews">
           <div class="card text-black cardSelect">
             <!-- <img class="card-img-top" src="https://picsum.photos/400" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#">Go somewhere</a>
-  </div> -->
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#">Go somewhere</a>
+             </div> -->
           </div>
         </div>
-        <div class="col-md-6 col-sm-12" id="firstPageSecondNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
     
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-sm-12" id="firstPageThirdtNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
         
           </div>
         </div>
-        <div class="col-md-6 col-sm-12" id="firstPageForthtNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
        
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-sm-12" id="firstPageFifthNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
         
           </div>
         </div>
-        <div class="col" id="firstPageSixthNews">
+        <div class="col">
           <div class="card text-black cardSelect">
             
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-sm-12" id="firstPageFifthNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
         
           </div>
         </div>
-        <div class="col" id="firstPageSixthNews">
+        <div class="col">
           <div class="card text-black cardSelect">
 
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-sm-12" id="firstPageFifthNews">
+        <div class="col-md-6 col-sm-12">
           <div class="card text-black cardSelect">
         
           </div>
         </div>
-        <div class="col" id="firstPageSixthNews">
+        <div class="col">
           <div class="card text-black cardSelect">
 
           </div>
@@ -117,7 +121,7 @@
 
     <!--Bigger -->
     <div class="col-md-6">
-      <div class="col" id="firstPageFirstNews">
+      <div class="col">
         <div class="card main text-black cardSelect">
           <!-- <img class="card-img-top" src="https://picsum.photos/600" alt="card image cap">
           <div class="card-body">
@@ -127,7 +131,7 @@
           </div> -->
         </div>
       </div>
-      <div class="col" id="firstPageFirstNews">
+      <div class="col">
         <div class="card main text-black cardSelect">
           <!-- <img class="card-img-top" src="https://picsum.photos/600" alt="Card image cap">
           <div class="card-body">
@@ -137,7 +141,7 @@
           </div> -->
         </div>
       </div>
-      <div class="col" id="firstPageFirstNews">
+      <div class="col">
         <div class="card main text-black cardSelect">
           <!-- <img class="card-img-top" src="https://picsum.photos/600" alt="Card image cap">
           <div class="card-body">
