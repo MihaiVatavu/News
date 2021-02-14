@@ -128,7 +128,7 @@ const switchToDark = () => {
 }
 
 window.onload =()=>{
-  
+
   switchToDark()
   addEventListenerToSearch()
   addEventListenerToLinks()

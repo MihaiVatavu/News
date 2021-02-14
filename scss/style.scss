@@ -11,12 +11,12 @@
 .darkMode {
   background-color: $background;
 
-  button {
-    background-color: $blue-dark-color;
+  .navbar {
+    border-bottom: 1px solid $blue-light-color;
   }
 
-  .collapse {
-    border-bottom: 1px solid $title-color;
+  button {
+    background-color: $blue-dark-color;
   }
 
   .navbar-nav {
@@ -75,6 +75,15 @@
   width: 90%;
   margin: 1rem auto;
   z-index: 999;
+  border-bottom: 1px solid $blue-light-color;
+  .navbar-brand {
+    width: 10%;
+    margin: auto 0;
+
+    @media (max-width: 768px) {
+      width: 15%;
+    }
+  }
 
   button {
     border: 1px solid $text-color;
@@ -82,17 +91,17 @@
 
   .collapse {
     width: 100%;
-    border-bottom: 1px solid $blue-light-color;
 
     .navbar-nav {
-      width: 80%;
+      width: 100%;
       text-align: center;
       margin: 0 auto;
     }
 
     .search {
-      float: right;
       width: 100%;
+      margin: 0 auto;
+      text-align: center;
       input {
         border: none;
         outline: none;
@@ -101,13 +110,12 @@
         color: $text-color;
         margin: 0 auto;
         text-align: end;
-        width: 80%;
         background-color: rgba(0, 0, 0, 0);
 
         @media (max-width: 768px) {
-          width: 100%;
           text-align: center;
           margin: 10px auto;
+          font-size: 1.1rem;
         }
       }
       input::placeholder {
@@ -116,23 +124,25 @@
     }
   }
   .switch {
-    position: absolute;
-    top: 1rem;
-    right: 0.5rem;
     display: flex;
     border-radius: 50px;
-    width: 4rem;
+    width: 100px;
     padding: 0.3rem;
     background-color: $text-color-dark;
     transition: background-color 0.2s;
     cursor: pointer;
     border: 1px solid $title-color;
+
+    @media (max-width: 768px) {
+      width: 3.5rem;
+      margin: 5px auto;
+    }
   }
 
   .btn-toggle {
-    width: 25px;
-    height: 25px;
-    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
     background-color: $background;
     transition: transform 0.1s;
   }
